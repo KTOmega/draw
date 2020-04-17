@@ -17,7 +17,6 @@
     "express": "^4.16.2",
     "express-session": "^1.15.6",
     "jsonminify": "^0.4.1",
-    "node-gyp-install": "*",
     "paper-jsdom": "^0.11.5",
     "socket.io": "^2.0.4",
     "ueberDB": "*"

@@ -28,7 +28,7 @@
   */
 
   /* The default selected tool - 'pencil', 'brush', 'select' */
-  "tool": "brush"
+  "tool": "pencil"
                  
   /* Example SSL Configuration
     "ssl" : {

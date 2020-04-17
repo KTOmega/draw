@@ -48,18 +48,23 @@ app.use(express.static(__dirname + '/'));
 
 // Sessions
 app.use(cookieParser());
-app.use(session({secret: 'secret', key: 'express.sid'}));
+app.use(session({
+  key: 'express.sid',
+  resave: false,
+  saveUninitialized: false,
+  secret: 'secret',
+}));
 
 
 // ROUTES
 // Index page
 app.get('/', function(req, res){
-  res.sendfile(__dirname + '/src/static/html/index.html');
+  res.sendFile(__dirname + '/src/static/html/index.html');
 });
 
 // Drawings
 app.get('/d/*', function(req, res){
-  res.sendfile(__dirname + '/src/static/html/draw.html');
+  res.sendFile(__dirname + '/src/static/html/draw.html');
 });
 
 // Front-end tests

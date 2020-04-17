@@ -215,3 +215,8 @@ function loadError(socket) {
   socket.emit('project:load:error');
 }
 
+// Signal handler for Docker
+process.on("SIGINT", () => {
+  console.log("Exiting...");
+  process.exit(0);
+})

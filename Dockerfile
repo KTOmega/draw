@@ -7,6 +7,6 @@ RUN cd /app && \
 
 WORKDIR /app
 
-EXPOSE 9002
+EXPOSE 9000
 
 CMD ["node", "server.js"]
